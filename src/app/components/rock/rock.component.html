@@ -1,0 +1,18 @@
+<div *ngFor="let img of imagen">
+    <img [src]="img" />
+    <button (mouseover)="mostrar($event)">Informacion</button>
+
+
+
+</div>
+<input type="text" (keyup.enter)="datoUser(nombre.value)" #nombre />
+
+<!-- Interpolacion de strings -->
+
+<h1>
+    {{datosArtista.nombre}}
+</h1>
+
+<span>
+    {{datosArtista.info}}
+</span>
